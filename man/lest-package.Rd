@@ -7,7 +7,7 @@
 \title{lest: Vectorised Conditionals Similar to SQL CASE WHEN}
 \description{
 This is a fork of the functions case_when and if_else from dplyr,
-but without any dependencies except base
+but without any dependencies except base.
 }
 \author{
 \strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com}

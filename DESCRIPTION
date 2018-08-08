@@ -5,7 +5,7 @@ Version: 0.0.1
 Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
 Description: This is a fork of the functions case_when and if_else from dplyr,
-  but without any dependencies except base
+  but without any dependencies except base.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
