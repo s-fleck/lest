@@ -1,27 +1,33 @@
 # lest
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-blue.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
-Vectorised Conditionals Similar to SQL CASE WHEN, forked from dplyr but without
-any dependencies. 
+lest contains forks of the dplyr functions `case_when()` and `if_else()`.
+`case_when()` enables you to vectorise multiple `if` and `else` statements
+(like the `CASE WHEN` statement in SQL). `if_else()` is a stricter and
+more predictable version of `base::ifelse()` that preverves attributes
+(and therefore works with Dates).
+
+**lest** depends only on base, and will never add any external dependencies.
 
 
-Relationship to dplyr::case_when() 
+
+Why use lest?
 ----------------------------------
 
 Use this package if you like the semantics of `dplyr::case_when()`, but do not 
-want to use dplyr. If you already use dplyr, it is not recommended to use 
-**lest**. `lest::case_when()` and `lest::if_else()` behave exactly identical to 
+want to use dplyr. 
+**If you already use dplyr, it is not recommended to use  lest**. 
+`lest::case_when()` and `lest::if_else()` behave exactly identical to 
 the dplyr equivalents, just that they do not support tidyeval syntax 
 (like `!!!`).
 
-The dplyr `suggests` in the package descriptions is just for unit tests. 
 
 
 Installation
 ------------
 
-You can install dint from GitHub with:
+You can install lest from GitHub with:
 
 ``` r
 # install.packages("devtools")

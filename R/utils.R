@@ -1,5 +1,3 @@
-
-
 backticks <- function (x){
   paste0("`", x, "`")
 }
@@ -41,34 +39,6 @@ fmt_calls <- function(...){
 
 
 
-check_length_val <- function(
-  length_x,
-  n,
-  header,
-  reason = NULL,
-  .stop = stop
-){
-  if (all(length_x %in% c(1L, n)))
-    return()
-
-  if (is.null(reason))
-    reason <- ""
-  else
-    reason <- paste0(" (", reason, ")")
-
-  if (is.null(header))
-    header <- ""
-  else
-    header <- paste0(header, " ")
-
-
-  if (n == 1) {
-    .stop(sprintf("%smust be length 1%s, not %s", header, reason, paste(length_x, collapse = ", ")))
-  } else {
-    .stop(sprintf("%smust be length %s%s or one, not %s", header, n, reason, paste(length_x, collapse = ", ")))
-  }
-}
-
 
 
 
@@ -83,9 +53,9 @@ replace_with <- function (
     return(x)
   }
 
-  check_length(val, x, name, reason)
-  check_type(val, x, name)
-  check_class(val, x, name)
+  assert_length_1_or_n(val, length(x), name, reason)
+  assert_equal_type(val, x, name)
+  assert_equal_class(val, x, name)
 
   i[is.na(i)] <- FALSE
   if (length(val) == 1L) {
@@ -99,26 +69,13 @@ replace_with <- function (
 
 
 
-check_length <- function (
-  x,
-  template,
-  header,
-  reason = NULL
-){
-  check_length_val(length(x), length(template), header, reason)
-}
-
-
-
-
-check_type <- function(
+assert_equal_type <- function(
   x,
   template,
   header
 ){
-  if (identical(typeof(x), typeof(template))) {
-    return()
-  }
+  if (identical(typeof(x), typeof(template)))
+    return(TRUE)
 
   if (is.null(header))
     header <- ""
@@ -131,16 +88,16 @@ check_type <- function(
 
 
 
-check_class <- function(
+assert_equal_class <- function(
   x,
   template,
   header
 ){
   if (!is.object(x)) {
-    return()
+    return(TRUE)
 
   } else if (identical(class(x), class(template))) {
-    return()
+    return(TRUE)
 
   } else {
 
@@ -150,15 +107,77 @@ check_class <- function(
       header <- paste0(header, " ")
 
 
-    stop(sprintf("%smust be type %s, not %s", header, typeof(template), typeof(x)))
+    stop(
+      sprintf(
+        "%smust be %s, not %s",
+        header,
+        paste(class(template), collapse = "/"),
+        paste(class(x), collapse = "/")
+      )
+    )
   }
 }
 
 
 
 
-fmt_classes <- function(
-  x
+check_length_1_or_n <- function(
+  x,
+  n,
+  header,
+  reason
 ){
-  paste(class(x), collapse = "/")
+  if (length(x) %in% c(1, n)){
+    return(NULL)
+  }
+
+
+  if (is.null(reason))
+    reason <- ""
+  else
+    reason <- paste0(" (", reason, ")")
+
+  if (is.null(header))
+    header <- ""
+  else
+    header <- paste0(header, " ")
+
+
+  inconsistent_lengths_message(length(x), n, header = header, reason = reason)
+}
+
+
+
+
+assert_length_1_or_n <- function(
+  x,
+  n,
+  header,
+  reason
+){
+  chk <- check_length_1_or_n(x, n, header, reason)
+
+  if (is.null(chk)){
+    TRUE
+  } else {
+    stop(chk)
+  }
+}
+
+
+
+
+# messages ----------------------------------------------------------------
+
+inconsistent_lengths_message <- function(
+  length_is,
+  length_should,
+  header = "",
+  reason = ""
+){
+  if (length_should == 1) {
+    sprintf("%smust be length 1%s, not %s", header, reason, paste(length_is, collapse = ", "))
+  } else {
+    sprintf("%smust be length %s%s or one, not %s", header, length_should, reason, paste(length_is, collapse = ", "))
+  }
 }

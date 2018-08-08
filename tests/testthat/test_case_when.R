@@ -1,5 +1,8 @@
 context("case_when")
 
+
+
+
 test_that("zero inputs throws an error", {
   expect_error(
     case_when(),
@@ -7,6 +10,9 @@ test_that("zero inputs throws an error", {
     fixed = TRUE
   )
 })
+
+
+
 
 test_that("error messages", {
   expect_error(
@@ -25,6 +31,9 @@ test_that("error messages", {
     fixed = TRUE
   )
 })
+
+
+
 
 test_that("cases must yield compatible lengths", {
   expect_error(
@@ -47,6 +56,9 @@ test_that("cases must yield compatible lengths", {
   )
 })
 
+
+
+
 test_that("matches values in order", {
   x <- 1:3
   expect_equal(
@@ -59,6 +71,9 @@ test_that("matches values in order", {
   )
 })
 
+
+
+
 test_that("unmatched gets missing value", {
   x <- 1:3
   expect_equal(
@@ -69,6 +84,9 @@ test_that("unmatched gets missing value", {
     c(1, 2, NA)
   )
 })
+
+
+
 
 test_that("missing values can be replaced (#1999)", {
   x <- c(1:3, NA)
@@ -82,6 +100,9 @@ test_that("missing values can be replaced (#1999)", {
   )
 })
 
+
+
+
 test_that("NA conditions (#2927)", {
   expect_equal(
     case_when(
@@ -91,6 +112,9 @@ test_that("NA conditions (#2927)", {
     c(1L, 4L, 4L)
   )
 })
+
+
+
 
 test_that("atomic conditions (#2909)", {
   expect_equal(
@@ -109,6 +133,9 @@ test_that("atomic conditions (#2909)", {
   )
 })
 
+
+
+
 test_that("zero-length conditions and values (#3041)", {
   expect_equal(
     case_when(
@@ -124,11 +151,4 @@ test_that("zero-length conditions and values (#3041)", {
     ),
     numeric()
   )
-})
-
-test_that("case_when can be used in anonymous functions (#3422)", {
-  res <- tibble::tibble(a = 1:3) %>%
-    dplyr::mutate(b = (function(x) case_when(x < 2 ~ TRUE, TRUE ~ FALSE))(a)) %>%
-    dplyr::pull()
-  expect_equal(res, c(TRUE, FALSE, FALSE))
 })

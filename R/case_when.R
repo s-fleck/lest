@@ -121,10 +121,11 @@ case_when <- function(...) {
       inconsistent_lengths <- non_atomic_lengths[-1]
       lhs_problems <- lhs_lengths %in% inconsistent_lengths
       rhs_problems <- rhs_lengths %in% inconsistent_lengths
-      problems <- lhs_problems | rhs_problems
+
+
       bad_calls(
-        formulas[problems],
-        check_length_val(inconsistent_lengths, m, header = NULL, .stop = identity)
+        formulas[lhs_problems | rhs_problems],
+        inconsistent_lengths_message(inconsistent_lengths, m)
       )
     }
   }
