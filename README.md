@@ -5,7 +5,7 @@
 lest contains forks of the dplyr functions `case_when()` and `if_else()`.
 `case_when()` enables you to vectorise multiple `if` and `else` statements
 (like the `CASE WHEN` statement in SQL). `if_else()` is a stricter and
-more predictable version of `base::ifelse()` that preverves attributes
+more predictable version of `base::ifelse()` that preserves attributes
 (and therefore works with Dates).
 
 **lest** depends only on base, and will never add any external dependencies.
