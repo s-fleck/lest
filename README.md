@@ -2,7 +2,7 @@
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
-lest contains forks of the
+lest is a fork of the
 [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) functions
 `if_else()` and `case_when()`. `if_else()` is a stricter and more predictable
 version of `base::ifelse()` that preverves attributes (and therefore works with
