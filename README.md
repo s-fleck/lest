@@ -1,12 +1,13 @@
 # lest
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-blue.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
-lest contains forks of the dplyr functions `case_when()` and `if_else()`.
-`case_when()` enables you to vectorise multiple `if` and `else` statements
-(like the `CASE WHEN` statement in SQL). `if_else()` is a stricter and
-more predictable version of `base::ifelse()` that preverves attributes
-(and therefore works with Dates).
+lest contains forks of the
+[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) functions
+`if_else()` and `case_when()`. `if_else()` is a stricter and more predictable
+version of `base::ifelse()` that preverves attributes (and therefore works with
+Dates). `case_when()` enables you to vectorise multiple `if` and `else` 
+statements (like `CASE WHEN` in SQL). 
 
 **lest** depends only on base, and will never add any external dependencies.
 
@@ -16,8 +17,8 @@ Why use lest?
 ----------------------------------
 
 Use this package if you like the semantics of `dplyr::case_when()`, but do not 
-want to use dplyr. 
-**If you already use dplyr, it is not recommended to use  lest**. 
+want to use dplyr because of the dependencies it comes with. 
+**If you already use dplyr in your project, you gain no advantage from lest**. 
 `lest::case_when()` and `lest::if_else()` behave exactly identical to 
 the dplyr equivalents, just that they do not support tidyeval syntax 
 (like `!!!`).

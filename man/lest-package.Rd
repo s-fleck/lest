@@ -4,10 +4,10 @@
 \name{lest-package}
 \alias{lest}
 \alias{lest-package}
-\title{lest: Vectorised Conditionals Similar to SQL CASE WHEN}
+\title{lest: Vectorised Nested if-else Statements Similar to SQL CASE WHEN}
 \description{
-This is a fork of the functions case_when and if_else from dplyr,
-but without any dependencies except base.
+A fork of the functions case_when and if_else from dplyr,
+  but without any external dependencies.
 }
 \author{
 \strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com}

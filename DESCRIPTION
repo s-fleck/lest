@@ -1,14 +1,14 @@
 Type: Package
 Package: lest
-Title: Vectorised Conditionals Similar to SQL CASE WHEN
-Version: 0.0.1
+Title: Vectorised Nested if-else Statements Similar to SQL CASE WHEN
+Version: 1.0.0
 Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
-Description: This is a fork of the functions case_when and if_else from dplyr,
-  but without any dependencies except base.
+Description: A fork of the functions case_when and if_else from dplyr,
+  but without any external dependencies.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
     testthat
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0

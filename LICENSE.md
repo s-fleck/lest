@@ -1,6 +1,9 @@
 # MIT License
 
-Copyright (c) 2018 Stefan Fleck
+Copyright (c) for portions of lest are held by RStudio and others, 2013-2015 as 
+part of the project dplyr. All other copyright for lest are held by 
+Stefan Fleck, 2018.
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
