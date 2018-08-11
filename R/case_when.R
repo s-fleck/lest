@@ -63,14 +63,12 @@
 #'   TRUE ~ NA
 #' )
 #' }
-#'
 #' dat <- iris[1:5, ]
-#' dat$size<- case_when(
+#' dat$size <- case_when(
 #'   dat$Sepal.Length < 5.0 ~ "small",
 #'   TRUE ~ "big"
 #' )
 #' dat
-
 case_when <- function(...) {
   formulas <- list(...)
   n <- length(formulas)
@@ -122,7 +120,6 @@ case_when <- function(...) {
       lhs_problems <- lhs_lengths %in% inconsistent_lengths
       rhs_problems <- rhs_lengths %in% inconsistent_lengths
 
-
       bad_calls(
         formulas[lhs_problems | rhs_problems],
         inconsistent_lengths_message(inconsistent_lengths, m)
@@ -140,4 +137,3 @@ case_when <- function(...) {
 
   out
 }
-

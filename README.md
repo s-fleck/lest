@@ -2,12 +2,13 @@
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
-lest is a fork of the
-[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) functions
-`if_else()` and `case_when()`. `if_else()` is a stricter and more predictable
-version of `base::ifelse()` that preverves attributes (and therefore works with
-Dates). `case_when()` enables you to vectorise multiple `if` and `else` 
-statements (like `CASE WHEN` in SQL). 
+Lest provides two functions for vectorised conditional recoding of variables.
+`case_when()` enables you to vectorise multiple `if` and `else` statements (like
+`CASE WHEN` in SQL). `if_else()` is a stricter and more predictable version of
+`base::ifelse()` that preverves attributes (and therefore works with Dates). The
+functions in lest are forks of the
+[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) functions of
+the same name.
 
 **lest** depends only on base, and will never add any external dependencies.
 

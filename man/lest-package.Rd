@@ -6,8 +6,12 @@
 \alias{lest-package}
 \title{lest: Vectorised Nested if-else Statements Similar to SQL CASE WHEN}
 \description{
-A fork of the functions case_when and if_else from dplyr,
-  but without any external dependencies.
+Functions for vectorised conditional recoding of variables. case_when()
+enables you to vectorise multiple if and else statements (like `CASE WHEN`
+in SQL). if_else() is a stricter and more predictable
+version of base::ifelse() that preserves attributes. These functions are
+forked from 'dplyr' with all package dependencies removed and behave
+identically to the originals.
 }
 \author{
 \strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com}
