@@ -8,24 +8,24 @@ case_when(...)
 }
 \arguments{
 \item{...}{A sequence of two-sided formulas. The left hand side (LHS)
-  determines which values match this case. The right hand side (RHS)
-  provides the replacement value.
+determines which values match this case. The right hand side (RHS)
+provides the replacement value.
 
-  The LHS must evaluate to a logical vector. The RHS does not need to be
-  logical, but all RHSs must evaluate to the same type of vector.
+The LHS must evaluate to a logical vector. The RHS does not need to be
+logical, but all RHSs must evaluate to the same type of vector.
 
-  Both LHS and RHS may have the same length of either 1 or `n`. The
-  value of `n` must be consistent across all cases. The case of
-  `n == 0` is treated as a variant of `n != 1`.}
+Both LHS and RHS may have the same length of either 1 or \code{n}. The
+value of \code{n} must be consistent across all cases. The case of
+\code{n == 0} is treated as a variant of \code{n != 1}.}
 }
 \value{
-A vector of length 1 or `n`, matching the length of the logical
-  input or output vectors, with the type (and attributes) of the first
-  RHS. Inconsistent lengths or types will generate an error.
+A vector of length 1 or \code{n}, matching the length of the logical
+input or output vectors, with the type (and attributes) of the first
+RHS. Inconsistent lengths or types will generate an error.
 }
 \description{
-This function allows you to vectorise multiple `if` and `else if`
-statements. It is an R equivalent of the SQL `CASE WHEN` statement.
+This function allows you to vectorise multiple \code{if} and \code{else if}
+statements. It is an R equivalent of the SQL \code{CASE WHEN} statement.
 }
 \examples{
 x <- 1:50
@@ -69,9 +69,8 @@ case_when(
   TRUE ~ NA
 )
 }
-
 dat <- iris[1:5, ]
-dat$size<- case_when(
+dat$size <- case_when(
   dat$Sepal.Length < 5.0 ~ "small",
   TRUE ~ "big"
 )

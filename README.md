@@ -7,7 +7,7 @@ Lest provides two functions for vectorised conditional recoding of variables.
 `CASE WHEN` in SQL). `if_else()` is a stricter and more predictable version of
 `base::ifelse()` that preverves attributes (and therefore works with Dates). The
 functions in lest are forks of the
-[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) functions of
+[dplyr](https://CRAN.R-project.org/package=dplyr) functions of
 the same name.
 
 **lest** depends only on base, and will never add any external dependencies.

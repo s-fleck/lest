@@ -7,7 +7,7 @@
 \title{lest: Vectorised Nested if-else Statements Similar to SQL CASE WHEN}
 \description{
 Functions for vectorised conditional recoding of variables. case_when()
-enables you to vectorise multiple if and else statements (like `CASE WHEN`
+enables you to vectorise multiple if and else statements (like 'CASE WHEN'
 in SQL). if_else() is a stricter and more predictable
 version of base::ifelse() that preserves attributes. These functions are
 forked from 'dplyr' with all package dependencies removed and behave
