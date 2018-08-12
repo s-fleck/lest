@@ -8,8 +8,13 @@ SEXP cumall_impl(SEXP x) {
   int *p_x = LOGICAL(x);
   int *p_res = LOGICAL(res);
   R_xlen_t n = XLENGTH(x);
-  memset(LOGICAL(res), 0, n * sizeof(int));
 
+  if (n == 0){
+    UNPROTECT(1);
+    return(res);
+  }
+
+  memset(LOGICAL(res), 0, n * sizeof(int));
   p_res[0] = p_x[0];
 
   for (R_xlen_t i = 1; i < n; i++) {
