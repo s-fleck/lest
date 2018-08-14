@@ -2,5 +2,6 @@
 
 export(case_when)
 export(cumall)
+export(cumany)
 export(if_else)
 useDynLib(lest, .registration = TRUE)

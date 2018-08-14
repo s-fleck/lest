@@ -2,10 +2,8 @@ context("cumall")
 
 
 test_that("cumall works as expected", {
-  expect_true(all(is.na(cumall(rep(NA, 5)))))
-  expect_true(all(cumall(rep(TRUE, 5))))
-  expect_false(any(cumall(rep(FALSE, 5))))
 
+  # normal usecases
   expect_identical(
     cumall(c(TRUE, TRUE, TRUE, FALSE)),
     c(TRUE, TRUE, TRUE, FALSE)
@@ -21,12 +19,23 @@ test_that("cumall works as expected", {
     c(TRUE, TRUE, NA, FALSE, FALSE)
   )
 
-  # scalars
+  expect_identical(
+    cumall(c(TRUE, NA, TRUE, FALSE)),
+    c(TRUE, NA, NA, FALSE)
+  )
+
+  # NAs
+  expect_true(all(is.na(cumall(rep(NA, 5)))))
+  expect_true(all(cumall(rep(TRUE, 5))))
+  expect_false(any(cumall(rep(FALSE, 5))))
+
+
+  # n = 1
   expect_true(is.na(cumall(NA)))
   expect_true(cumall(TRUE))
   expect_false(cumall(FALSE))
 
-  # degenerate cases
+  # n = 0
   expect_identical(
     cumall(logical()),
     logical()
@@ -38,8 +47,7 @@ test_that("cumall works as expected", {
 
 test_that("cumany works as expected", {
 
-  skip("not yet")
-
+  # normal usecases
   expect_identical(
     cumany(c(TRUE, NA, FALSE)),
     c(TRUE, TRUE, TRUE)
@@ -50,12 +58,17 @@ test_that("cumany works as expected", {
     c(FALSE, NA, TRUE)
   )
 
-  # scalars
+  # NAs
+  expect_true(all(is.na(cumany(rep(NA, 5)))))
+  expect_true(all(cumany(rep(TRUE, 5))))
+  expect_false(any(cumany(rep(FALSE, 5))))
+
+  # n = 1
   expect_true(is.na(cumany(NA)))
   expect_true(cumany(TRUE))
   expect_false(cumany(FALSE))
 
-  # degenerate cases
+  # n = 0
   expect_identical(
     cumany(logical()),
     logical()
