@@ -4,7 +4,7 @@
 \name{lest-package}
 \alias{lest}
 \alias{lest-package}
-\title{lest: Vectorised Nested if-else Statements Similar to SQL CASE WHEN}
+\title{lest: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'}
 \description{
 Functions for vectorised conditional recoding of variables. case_when()
   enables you to vectorise multiple if and else statements (like 'CASE WHEN'

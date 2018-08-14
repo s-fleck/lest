@@ -1,6 +1,6 @@
 Type: Package
 Package: lest
-Title: Vectorised Nested if-else Statements Similar to SQL CASE WHEN
+Title: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'
 Version: 1.0.0
 Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
