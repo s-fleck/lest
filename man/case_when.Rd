@@ -61,14 +61,14 @@ case_when(
   TRUE ~ NA_real_
 )
 # This throws an error as NA is logical not numeric
-\dontrun{
+try({
 case_when(
   x \%\% 35 == 0 ~ 35,
   x \%\% 5 == 0 ~ 5,
   x \%\% 7 == 0 ~ 7,
   TRUE ~ NA
 )
-}
+})
 dat <- iris[1:5, ]
 dat$size <- case_when(
   dat$Sepal.Length < 5.0 ~ "small",
