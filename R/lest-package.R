@@ -3,3 +3,8 @@
 "_PACKAGE"
 
 
+
+
+.onUnload <- function (libpath) {
+  library.dynam.unload("lest", libpath)
+}

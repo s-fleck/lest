@@ -1,7 +1,7 @@
 #include <R.h>
 #include <Rinternals.h>
 
-SEXP cumall(SEXP x) {
+SEXP cumall_(SEXP x) {
   R_xlen_t n = XLENGTH(x);
   SEXP res = PROTECT(allocVector(LGLSXP, n));
 
@@ -28,7 +28,7 @@ SEXP cumall(SEXP x) {
 
 
 
-SEXP cumany(SEXP x) {
+SEXP cumany_(SEXP x) {
   R_xlen_t n = XLENGTH(x);
   SEXP res = PROTECT(allocVector(LGLSXP, n));
 

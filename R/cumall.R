@@ -8,7 +8,7 @@
 #' cumall(c(TRUE, TRUE, NA, TRUE, FALSE))
 #' cumany(c(FALSE, FALSE, NA, TRUE, FALSE))
 cumall <- function(x) {
-  .Call("cumall", x)
+  .Call("cumall_", x)
 }
 
 
@@ -17,5 +17,5 @@ cumall <- function(x) {
 #' @rdname cumall
 #' @export
 cumany <- function(x) {
-  .Call("cumany", x)
+  .Call("cumany_", x)
 }
