@@ -5,3 +5,5 @@
 _pkgdown.yml
 docs
 cran-comments.md
+*.o
+*.so
