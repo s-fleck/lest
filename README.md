@@ -1,5 +1,6 @@
 # lest
 
+[![CRAN status](https://www.r-pkg.org/badges/version/lest)](https://cran.r-project.org/package=lest)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 Lest provides two functions for vectorised conditional recoding of variables.
