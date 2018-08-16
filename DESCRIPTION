@@ -1,10 +1,10 @@
 Type: Package
 Package: lest
 Title: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
-Description: 
+Description:
   Functions for vectorised conditional recoding of variables. case_when()
   enables you to vectorise multiple if and else statements (like 'CASE WHEN'
   in 'SQL'). if_else() is a stricter and more predictable
@@ -15,6 +15,6 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-Suggests: 
+Suggests:
     testthat
 RoxygenNote: 6.1.0
