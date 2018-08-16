@@ -13,6 +13,7 @@ cumall <- function(x) {
 
 
 
+
 #' @rdname cumall
 #' @export
 cumany <- function(x) {

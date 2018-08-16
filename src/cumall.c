@@ -1,4 +1,3 @@
-// In C ----------------------------------------
 #include <R.h>
 #include <Rinternals.h>
 
