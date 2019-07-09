@@ -1,20 +1,43 @@
 Type: Package
 Package: lest
-Title: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'
+Title: Vectorised Nested if-else Statements Similar to CASE WHEN
+    in 'SQL'
 Version: 1.0.0.9000
-Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
+Authors@R: 
+    c(person(given = "Stefan",
+             family = "Fleck",
+             role = c("aut", "cre"),
+             email = "stefan.b.fleck@gmail.com",
+             comment = c(ORCID = "0000-0003-3344-9851")),
+      person(given = "Hadley",
+             family = "Wickham",
+             role = "aut",
+             email = "hadley@rstudio.com",
+             comment = c(ORCID = "0000-0003-4757-117X")),
+      person(given = "Romain",
+             family = "François",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-2444-4226")),
+      person(given = "Lionel",
+             family = "Henry",
+             role = "aut"),
+      person(given = "Kirill",
+             family = "Müller",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-1416-3412")),
+      person(given = "RStudio",
+             role = c("cph", "fnd")))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
-Description:
-  Functions for vectorised conditional recoding of variables. case_when()
-  enables you to vectorise multiple if and else statements (like 'CASE WHEN'
-  in 'SQL'). if_else() is a stricter and more predictable
-  version of ifelse() in 'base' that preserves attributes. These functions are 
-  forked from 'dplyr' with all package dependencies removed and behave
-  identically to the originals.
+Description: Functions for vectorised conditional recoding
+    of variables. case_when() enables you to vectorise multiple if and
+    else statements (like 'CASE WHEN' in 'SQL'). if_else() is a stricter
+    and more predictable version of ifelse() in 'base' that preserves
+    attributes. These functions are forked from 'dplyr' with all package
+    dependencies removed and behave identically to the originals.
 License: MIT + file LICENSE
+Suggests:
+    testthat
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-Suggests:
-    testthat
 RoxygenNote: 6.1.0
