@@ -3,5 +3,6 @@
 export(case_when)
 export(cumall)
 export(cumany)
+export(cumsum_threshold)
 export(if_else)
 useDynLib(lest, .registration = TRUE)

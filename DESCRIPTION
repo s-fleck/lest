@@ -1,7 +1,7 @@
 Type: Package
 Package: lest
 Title: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'
-Version: 1.0.0.9000
+Version: 1.0.0.9001
 Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
 Description:
@@ -17,4 +17,4 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
