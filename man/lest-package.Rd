@@ -4,17 +4,31 @@
 \name{lest-package}
 \alias{lest}
 \alias{lest-package}
-\title{lest: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'}
+\title{lest: Vectorised Nested if-else Statements Similar to CASE WHEN
+    in 'SQL'}
 \description{
-Functions for vectorised conditional recoding of variables. case_when()
-  enables you to vectorise multiple if and else statements (like 'CASE WHEN'
-  in 'SQL'). if_else() is a stricter and more predictable
-  version of ifelse() in 'base' that preserves attributes. These functions are 
-  forked from 'dplyr' with all package dependencies removed and behave
-  identically to the originals.
+Functions for vectorised conditional recoding of
+    variables. case_when() enables you to vectorise multiple if and else
+    statements (like 'CASE WHEN' in 'SQL'). if_else() is a stricter and
+    more predictable version of ifelse() in 'base' that preserves
+    attributes. These functions are forked from 'dplyr' with all package
+    dependencies removed and behave identically to the originals.
 }
 \author{
-\strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com}
+\strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com} (0000-0003-3344-9851)
+
+Authors:
+\itemize{
+  \item Hadley Wickham \email{hadley@rstudio.com} (0000-0003-4757-117X)
+  \item Romain François (0000-0002-2444-4226)
+  \item Lionel Henry
+  \item Kirill Müller (0000-0002-1416-3412)
+}
+
+Other contributors:
+\itemize{
+  \item RStudio [copyright holder, funder]
+}
 
 }
 \keyword{internal}

@@ -1,6 +1,7 @@
 Type: Package
 Package: lest
-Title: Vectorised Nested if-else Statements Similar to CASE WHEN in 'SQL'
+Title: Vectorised Nested if-else Statements Similar to CASE WHEN
+    in 'SQL'
 Version: 1.0.0.9002
 Authors@R: 
     c(person(given = "Stefan",
@@ -27,10 +28,10 @@ Authors@R:
       person(given = "RStudio",
              role = c("cph", "fnd")))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
-Description: Functions for vectorised conditional recoding
-    of variables. case_when() enables you to vectorise multiple if and
-    else statements (like 'CASE WHEN' in 'SQL'). if_else() is a stricter
-    and more predictable version of ifelse() in 'base' that preserves
+Description: Functions for vectorised conditional recoding of
+    variables. case_when() enables you to vectorise multiple if and else
+    statements (like 'CASE WHEN' in 'SQL'). if_else() is a stricter and
+    more predictable version of ifelse() in 'base' that preserves
     attributes. These functions are forked from 'dplyr' with all package
     dependencies removed and behave identically to the originals.
 License: MIT + file LICENSE
@@ -39,6 +40,4 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-Suggests:
-    testthat
 RoxygenNote: 6.1.1

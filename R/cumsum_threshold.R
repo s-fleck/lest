@@ -1,14 +1,10 @@
-#' Cummulative thresholds for sum
-#'
-#' Check
+#' Check if cummulative sum of a vector exceedes a certain threshold
 #'
 #' @param x a `numeric` vector
 #' @param threshold a `numeric` scalar
 #'
-#' @rdname cumall
 #' @export
-#' @example
-#'
+#' @examples
 #' cumsum_threshold(c(1, 3, 3, 3), 4)
 #'
 cumsum_threshold <- function(x, threshold) {
