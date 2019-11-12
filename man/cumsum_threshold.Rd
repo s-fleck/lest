@@ -2,15 +2,22 @@
 % Please edit documentation in R/cumsum_threshold.R
 \name{cumsum_threshold}
 \alias{cumsum_threshold}
-\title{Cummulative thresholds for sum}
+\title{Check if cummulative sum of a vector exceedes a certain threshold}
 \usage{
-cumsum_threshold(x, threshold)
+cumsum_threshold(x, threshold, first = NULL, last = NULL)
 }
 \arguments{
 \item{x}{a \code{numeric} vector}
 
 \item{threshold}{a \code{numeric} scalar}
+
+\item{first, last}{\code{logical} scalar. If \code{TRUE} the first (or last) value(s)
+will always be \code{TRUE}}
 }
 \description{
-Check
+Check if cummulative sum of a vector exceedes a certain threshold
+}
+\examples{
+cumsum_threshold(c(1, 3, 3, 3), 4)
+
 }
