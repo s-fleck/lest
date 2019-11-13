@@ -48,9 +48,6 @@ SEXP C_exceeds_tumbling_sum_double(
 
 
 
-#include <R.h>
-#include <Rinternals.h>
-
 SEXP C_exceeds_tumbling_sum_int(
     SEXP x,
     SEXP threshold,
