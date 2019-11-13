@@ -1,6 +1,7 @@
 # lest 1.0.0.9000
-  * Add cumsum_threshold for checking when a cummulative sum hits a certain
-    threshold
+  * Added `exceeds_tumbling_sum()` for checking when a partial cummulative sum 
+    ("tumbling sum"") hits a certain threshold value. Thanks to @klmr for
+    helping me come up with a name.
 
 
 # lest 1.0.0.9000
