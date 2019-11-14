@@ -1,7 +1,7 @@
 #include <R.h>
 #include <Rinternals.h>
 
-SEXP C_exceeds_tumbling_sum_double(
+SEXP exceeds_tumbling_sum_double_(
     SEXP x,
     SEXP threshold,
     SEXP inclusive
@@ -48,10 +48,7 @@ SEXP C_exceeds_tumbling_sum_double(
 
 
 
-#include <R.h>
-#include <Rinternals.h>
-
-SEXP C_exceeds_tumbling_sum_int(
+SEXP exceeds_tumbling_sum_int_(
     SEXP x,
     SEXP threshold,
     SEXP inclusive

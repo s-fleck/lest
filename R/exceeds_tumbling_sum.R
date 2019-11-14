@@ -34,7 +34,7 @@ exceeds_tumbling_sum <- function(
     assert(!anyNA(x))
     assert(!is.na(threshold))
 
-    .Call("C_exceeds_tumbling_sum_int", x, threshold, inclusive)
+    .Call("exceeds_tumbling_sum_int_", x, threshold, inclusive)
 
   } else {
     x <- as.double(x)
@@ -42,10 +42,6 @@ exceeds_tumbling_sum <- function(
     assert(!anyNA(x))
     assert(!is.na(threshold))
 
-    .Call("C_exceeds_tumbling_sum_double", x, threshold, inclusive)
+    .Call("exceeds_tumbling_sum_double_", x, threshold, inclusive)
   }
 }
-
-
-
-# for nicer name
