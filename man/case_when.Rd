@@ -24,7 +24,7 @@ input or output vectors, with the type (and attributes) of the first
 RHS. Inconsistent lengths or types will generate an error.
 }
 \description{
-This function allows you to vectorise multiple \verb{if} and \verb{else if}
+This function allows you to vectorise multiple \code{if} and \verb{else if}
 statements. It is an R equivalent of the SQL \verb{CASE WHEN} statement.
 }
 \examples{

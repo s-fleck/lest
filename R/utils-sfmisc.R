@@ -1,4 +1,4 @@
-# sfmisc utils 0.0.1.9030
+# sfmisc utils 0.0.1.9031
 
 
 
@@ -19,7 +19,7 @@
 #' @return a `character` scalar
 #' @noRd
 #'
-#' @example
+#' @examples
 #'   ptrunc(month.abb)
 #'   ptrunc(month.abb, month.name)
 #'

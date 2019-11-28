@@ -11,9 +11,6 @@ functions in lest are forks of the
 [dplyr](https://CRAN.R-project.org/package=dplyr) functions of
 the same name.
 
-**lest** depends only on base, and will never add any external dependencies.
-
-
 
 Why use lest?
 ----------------------------------
@@ -25,6 +22,11 @@ want to use dplyr because of the dependencies it comes with.
 the dplyr equivalents, just that they do not support tidyeval syntax 
 (like `!!!`).
 
+
+Dependencies
+----------------------------------
+
+**lest** depends only on base R, and will never add any external dependencies.
 
 
 Installation

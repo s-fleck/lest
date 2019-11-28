@@ -12,7 +12,7 @@ exceeds_tumbling_sum(x, threshold, inclusive = TRUE)
 \item{threshold}{a \code{numeric} scalar}
 
 \item{inclusive}{a \code{logical} scalar. If \code{TRUE} inclusive bounds are used
-(i.e. the threshold is checked with \verb{>=}), otherwise exclusive}
+(i.e. the threshold is checked with \code{>=}), otherwise exclusive}
 }
 \value{
 a \code{logical} vector of the same length as \code{x} that is \code{TRUE} whenever
