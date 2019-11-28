@@ -5,3 +5,4 @@
 ^docs$
 ^cran-comments\.md$
 ^benchmark$
+^\.travis\.yml$
