@@ -25,10 +25,5 @@ Authors:
   \item Kirill Müller (\href{https://orcid.org/0000-0002-1416-3412}{ORCID})
 }
 
-Other contributors:
-\itemize{
-  \item RStudio [copyright holder, funder]
-}
-
 }
 \keyword{internal}

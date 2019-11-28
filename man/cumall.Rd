@@ -3,7 +3,7 @@
 \name{cumall}
 \alias{cumall}
 \alias{cumany}
-\title{Cummulative all and any}
+\title{Cumulative all and any}
 \usage{
 cumall(x)
 
@@ -16,7 +16,7 @@ cumany(x)
 a \code{logical} vector
 }
 \description{
-Cummulative all and any
+Cumulative all and any
 }
 \examples{
 cumall(c(TRUE, TRUE, NA, TRUE, FALSE))

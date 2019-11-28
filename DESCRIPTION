@@ -24,9 +24,7 @@ Authors@R:
       person(given = "Kirill",
              family = "Müller",
              role = "aut",
-             comment = c(ORCID = "0000-0002-1416-3412")),
-      person(given = "RStudio",
-             role = c("cph", "fnd")))
+             comment = c(ORCID = "0000-0002-1416-3412")))
 Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
 Description: Functions for vectorised conditional recoding of
     variables. case_when() enables you to vectorise multiple if and else

@@ -1,12 +1,12 @@
 #' Check When the Tumbling Sum of a Vector Exceeds a Threshold
 #'
-#' The tumbling sum is calculated as the partial cummulative sum of a vector
+#' The tumbling sum is calculated as the partial cumulative sum of a vector
 #' until a threshold is exceeded. Once this happens, the tumbling sum is
 #' calculated from zero again. `exceeds_tumbling_sum()` returns `TRUE` whenever
 #' this threshold is hit/exceeded and `FALSE` otherwise.
 #'
 #' This is for example useful if you have high frequency GPS positions
-#' and want to keep only points that are at least `x` seconds appart.
+#' and want to keep only points that are at least `x` seconds apart.
 #'
 #' @param x a `numeric` vector
 #' @param threshold a `numeric` scalar

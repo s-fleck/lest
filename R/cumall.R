@@ -1,4 +1,4 @@
-#' Cummulative all and any
+#' Cumulative all and any
 #'
 #' @param x a `logical` vector.
 #' @return a `logical` vector

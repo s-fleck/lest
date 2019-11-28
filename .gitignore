@@ -3,7 +3,6 @@
 .RData
 .Ruserdata
 _pkgdown.yml
-docs
 cran-comments.md
 *.o
 *.so

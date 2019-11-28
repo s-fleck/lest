@@ -19,14 +19,14 @@ a \code{logical} vector of the same length as \code{x} that is \code{TRUE} whene
 \code{threshold} was exceeded and \code{FALSE} otherwise
 }
 \description{
-The tumbling sum is calculated as the partial cummulative sum of a vector
+The tumbling sum is calculated as the partial cumulative sum of a vector
 until a threshold is exceeded. Once this happens, the tumbling sum is
 calculated from zero again. \code{exceeds_tumbling_sum()} returns \code{TRUE} whenever
 this threshold is hit/exceeded and \code{FALSE} otherwise.
 }
 \details{
 This is for example useful if you have high frequency GPS positions
-and want to keep only points that are at least \code{x} seconds appart.
+and want to keep only points that are at least \code{x} seconds apart.
 }
 \examples{
 exceeds_tumbling_sum(c(1, 3, 3, 3), 4)
