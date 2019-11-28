@@ -15,14 +15,14 @@ Functions for vectorised conditional recoding of
     dependencies removed and behave identically to the originals.
 }
 \author{
-\strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com} (0000-0003-3344-9851)
+\strong{Maintainer}: Stefan Fleck \email{stefan.b.fleck@gmail.com} (\href{https://orcid.org/0000-0003-3344-9851}{ORCID})
 
 Authors:
 \itemize{
-  \item Hadley Wickham \email{hadley@rstudio.com} (0000-0003-4757-117X)
-  \item Romain François (0000-0002-2444-4226)
+  \item Hadley Wickham \email{hadley@rstudio.com} (\href{https://orcid.org/0000-0003-4757-117X}{ORCID})
+  \item Romain François (\href{https://orcid.org/0000-0002-2444-4226}{ORCID})
   \item Lionel Henry
-  \item Kirill Müller (0000-0002-1416-3412)
+  \item Kirill Müller (\href{https://orcid.org/0000-0002-1416-3412}{ORCID})
 }
 
 Other contributors:
