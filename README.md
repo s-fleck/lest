@@ -1,3 +1,5 @@
+**This package is now obsolete as dplyr has saner dependencies now, and data.table also implemented a similar function**
+
 # lest
 
 <!-- badges: start -->
